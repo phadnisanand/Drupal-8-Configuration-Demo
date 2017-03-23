@@ -1,0 +1,11 @@
+name: custom module
+type: module
+description: custom_module.
+# core: 8.x
+# These modules are required by the tests, must be available at bootstrap time
+
+# Information added by Drupal.org packaging script on 2017-03-15
+version: '8.x-1.x-dev'
+core: '8.x'
+datestamp: 1489606986
+configure: custom_module.admin_settings

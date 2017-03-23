@@ -1,0 +1,15 @@
+# Provides a simple user interface that tells the developer where to go.
+custom_module.description:
+  path: 'custom_module'
+  defaults:
+    _controller: '\Drupal\custom_module\Controller\CustomModuleController::getDemo'
+  requirements:
+    _permission: 'access content'
+    
+custom_module.admin_settings:
+  path: '/admin/config/custom_module'
+  defaults:
+    _form: '\Drupal\custom_module\Form\ModuleConfigurationForm'
+    _title: 'custom_module configuration screen'
+  requirements:
+    _permission: 'administer site configuration'
